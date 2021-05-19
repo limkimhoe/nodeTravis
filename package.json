@@ -4,6 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "test": "node test.js",
     "start": "gulp"
   },
@@ -26,5 +27,8 @@
   },
   "devDependencies": {
     "nodemon": "^1.9.2"
-  }
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
+    }
 }
